@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>signup page for Elan and Vision</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+                <nav>
+                    <ul id='Options'>
+                        <li><a href="Elan_Frontpage.html"target="_blank">Home</a></li>
+                        <li><a href="https://www.facebook.com/elan.iithyderabad/about/?ref=page_internal"target="_blank">About us</a></li>
+                        <li><a href="https://in.linkedin.com/company/elan-nvision"target="_blank">Services</a></li>
+                        <li><a href="https://in.top10place.com/elan-iit-hyderabad-2057495382.html#contact_details"target="_blank">Contact</a></li>
+                        <li><a href="https://iith.ac.in/"target="_blank">IITH</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="form-box">
+            <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class = "toggle-btn"onclick="login()">LogIn</button>
+            <button type="button" class = "toggle-btn"onclick="SignUp()">SignUp</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"target="_blank">
+            <img src="./images/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png">
+            </a>
+            <a href="https://twitter.com/i/flow/login"target="_blank">
+            <img src="./images/post47.png">
+            </a>
+            <a href="https://www.gmail.com"target="_blank">
+            <img src="./images/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png">
+            </a>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text"class="input-field" placeholder="User Id"
+            required>
+            <input type="password"class="input-field" placeholder="Enter Password"
+            required>
+            <input type = "checkbox" class="'check-box"><span>Remeber Password</span>
+            <button type="submit" class="submit-btn" >Log In</button>
+                <img src="./images/download.png">
+                
+        </form>
+        <form id="SignUp" class="input-group">
+            <input type="text"class="input-field" placeholder="User name"
+            required>
+        <input type="email"class="input-field" placeholder="Email Id"
+            required>
+            <input type="text"class="input-field" placeholder="Create Password"
+            required>
+            <input type = "checkbox" class="'check-box"><span>I agree to the term and condition</span>
+            <button type="submit" class="submit-btn">SignUp</button>
+            <img src="./images/download.png">
+        </form>  
+        </div>
+        </div>
+        <script>
+            var x= document.getElementById("login");
+            var y= document.getElementById("SignUp");
+            var z= document.getElementById("btn");
+ 
+            function SignUp(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+        </script>
+    </body>
+</html>
